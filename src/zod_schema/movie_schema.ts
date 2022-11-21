@@ -1,6 +1,6 @@
 import { z, TypeOf } from 'zod';
 
-export const rideSchema = z.object({
+export const movie_schema = z.object({
   body: z.object({
     
     id: z.string({ required_error: 'ID is required !' })
@@ -21,4 +21,4 @@ export const rideSchema = z.object({
 }),
 });
 
-export type RidesSchemaType = TypeOf<typeof rideSchema>['body'];
+export type MovieSchemaType = TypeOf<typeof movie_schema>['body'];
